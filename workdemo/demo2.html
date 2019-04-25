@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>css3遮罩</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      ul {
+        padding: 20px;
+      }
+      ul li {
+        list-style: none;
+        float: left;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        text-align: center;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -o-border-radius: 10px;
+        -ms-border-radius: 10px;
+        
+      }
+      ul li a {
+        display: inline-block;
+        opacity: 0.4;
+        background-color: #000;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 30px;
+        width: 100%;
+        line-height: 30px;
+        color: #fff;
+        transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        /* box-sizing: border-box; */
+      }
+      .shade {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 30px;
+        width: 100%;
+        line-height: 30px;
+        color: #fff;
+      }
+      ul li a:hover {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="header">
+      <li class="active">
+        菜单1
+        <a href="###">
+          <span class="shade">内容介绍</span>
+        </a>
+      </li>
+      <li>
+        菜单1
+        <a href="###">
+          <span class="shade">内容介绍</span>
+        </a>
+      </li>
+      <li>
+        菜单1
+        <a href="###">
+          <span class="shade">内容介绍</span>
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>
